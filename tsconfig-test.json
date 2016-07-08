@@ -1,0 +1,36 @@
+{
+  "version": "1.8.10",
+  "compilerOptions": {
+    "outDir": "./testlib",
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "filesGlob": [
+    "test/**/*.ts",
+    "test/**/*.tsx",
+    "typings/**/*.ts",
+    "!node_modules/**"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "files": [
+    "test/index.ts",
+    "typings/globals/mocha/index.d.ts",
+    "typings/index.d.ts",
+    "typings/modules/chai/index.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}

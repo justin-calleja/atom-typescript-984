@@ -1,0 +1,23 @@
+{
+  "name": "atom-typescript-984",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./lib && mkdir ./lib",
+    "cleanTest": "rm -rf ./testlib && mkdir ./testlib",
+    "build": "npm run clean && tsc -p ./tsconfig.json",
+    "buildTest": "npm run cleanTest && tsc -p ./tsconfig-test.json",
+    "pretest": "npm run build && npm run buildTest",
+    "test": "mocha ./testlib/index.js"
+  },
+  "keywords": [],
+  "author": "Justin Calleja <calleja.justin@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.1"
+  }
+}
